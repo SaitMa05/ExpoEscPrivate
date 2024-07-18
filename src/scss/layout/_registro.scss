@@ -1,0 +1,144 @@
+.registro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $turquesa;
+
+    @include tablet{
+        width: 90%;
+    }
+
+    @include desktop {
+        width: 40%;
+        height: auto;
+    }
+}
+.registro-cont{
+    padding: 1rem;
+    width: 100%;
+    color: $blanco;
+
+    h2{
+        text-align: start;
+        font-size: 2.6rem;
+        margin: 0;
+        max-width: 100%;
+        margin: auto;
+        font-weight: 200;
+
+        @include tablet{
+            width: 90%;
+        }
+
+        @include desktop {
+            width: 60%;
+        }
+    }
+
+    .registro-form{
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+
+        @include tablet{
+            width: 90%;
+        }
+
+        @include desktop {
+            width: 60%;
+        }
+    }
+
+    .registro-form-group{
+        margin-bottom: 6px;
+        label{
+            font-weight: 200;
+            margin-bottom: 6px;
+        }
+        input{
+            width: 100%;
+            padding: 0.6rem;
+            outline: none;
+        }
+    }
+
+    .info-registro{
+        font-size: 1.3rem;
+        max-width: 60%;
+        margin: auto;
+        color: $blanco;
+        text-align: center;
+    }
+}
+.registro-form-button{
+    border: none;
+    padding: 1rem;
+    margin: 10px 0 0 0;
+    background-color: $amarillo;
+    color: $blanco;
+    transition: all 0.3s;
+    &:hover{
+        cursor: pointer;
+        outline: none;
+        transform: scale(1.03);
+    }
+}
+
+.alerta{
+    text-align: center;
+    background-color: #dc3545;
+    max-width: 100%;
+    margin: auto;
+
+    
+    .alerta-text{
+        color: $blanco;
+        font-size: 1.6rem;
+    }
+}
+#acompanantes{
+    margin-bottom: 10px;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.6rem;
+    background-color: $turquesaMedio;
+    transition: all 0.3s;
+
+    @include tablet{
+        width: 90%;
+    }
+
+    &:hover{
+        background-color: $turquesaMedioHover;
+    }
+
+    p{
+        color: $blanco;
+        margin: 0;
+        font-size: 1.6rem;
+    
+    }
+
+    a{
+        color: $blanco;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover{
+            color: $amarilloClaro;
+        }
+    }
+
+    @include desktop{
+        width: 40%;
+    }
+}
